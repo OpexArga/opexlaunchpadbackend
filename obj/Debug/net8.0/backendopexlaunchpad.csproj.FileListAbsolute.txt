@@ -109,3 +109,13 @@ D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\ru\Microsoft.Co
 D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\obj\Debug\net8.0\backendopexlaunchpad.sourcelink.json
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\OpexDevelopment\backend\backendopexlaunchpad\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
