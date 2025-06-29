@@ -11,5 +11,7 @@ namespace OpexShowcase.Models
 
         [Required]
         public required string PasswordHash { get; set; }
+
+        public ICollection<UserProduct> UserProducts { get; set; } = new List<UserProduct>();
     }
 }

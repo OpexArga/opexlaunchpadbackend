@@ -1,8 +1,11 @@
-namespace OpexShowcase.Models;
-
-public class Product
+namespace OpexShowcase.Models
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public decimal Price { get; set; }
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public decimal Price { get; set; }
+
+        public ICollection<UserProduct> UserProducts { get; set; } = new List<UserProduct>();
+    }
 }
