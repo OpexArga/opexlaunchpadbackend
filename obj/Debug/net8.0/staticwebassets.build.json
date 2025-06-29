@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "M0aRxULV3wNmlWUZ37yX7Xrp48t+p3QfDBYHxk+3tO8=",
+  "Source": "backendopexlaunchpad",
+  "BasePath": "_content/backendopexlaunchpad",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
