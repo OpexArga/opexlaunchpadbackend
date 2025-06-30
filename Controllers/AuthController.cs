@@ -49,7 +49,7 @@ public class AuthController : ControllerBase
         var claims = new[]
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Email, user.Email)
+            new Claim("email", user.Email)
         };
 
         var secret = _config["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key is not configured");

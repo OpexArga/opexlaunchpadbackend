@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OpexDevelopment\\backend\\backendopexlaunchpad\\backendopexlaunchpad.csproj": {}
+    "D:\\OpexDevelopment\\launchpad\\backend\\backendopexlaunchpad.csproj": {}
   },
   "projects": {
-    "D:\\OpexDevelopment\\backend\\backendopexlaunchpad\\backendopexlaunchpad.csproj": {
+    "D:\\OpexDevelopment\\launchpad\\backend\\backendopexlaunchpad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OpexDevelopment\\backend\\backendopexlaunchpad\\backendopexlaunchpad.csproj",
+        "projectUniqueName": "D:\\OpexDevelopment\\launchpad\\backend\\backendopexlaunchpad.csproj",
         "projectName": "backendopexlaunchpad",
-        "projectPath": "D:\\OpexDevelopment\\backend\\backendopexlaunchpad\\backendopexlaunchpad.csproj",
+        "projectPath": "D:\\OpexDevelopment\\launchpad\\backend\\backendopexlaunchpad.csproj",
         "packagesPath": "C:\\Users\\nilam\\.nuget\\packages\\",
-        "outputPath": "D:\\OpexDevelopment\\backend\\backendopexlaunchpad\\obj\\",
+        "outputPath": "D:\\OpexDevelopment\\launchpad\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nilam\\AppData\\Roaming\\NuGet\\NuGet.Config"

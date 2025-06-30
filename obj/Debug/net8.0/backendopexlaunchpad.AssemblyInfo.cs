@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("backendopexlaunchpad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bf523420141d60e6ad3c70718f3db9656c9c43a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0924858f2ad0ece41da0e371c932266da932e163")]
 [assembly: System.Reflection.AssemblyProductAttribute("backendopexlaunchpad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("backendopexlaunchpad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
