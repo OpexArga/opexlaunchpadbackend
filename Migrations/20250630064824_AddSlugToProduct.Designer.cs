@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using OpexShowcase.Data;
@@ -11,9 +12,11 @@ using OpexShowcase.Data;
 namespace backendopexlaunchpad.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250630064824_AddSlugToProduct")]
+    partial class AddSlugToProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,29 +60,29 @@ namespace backendopexlaunchpad.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Unlock AI-powered efficiency by connecting your ERP and enterprise systems seamlessly.",
-                            ImageUrl = "/images/products/opexai.jpg",
+                            Description = "Unlock AI-powered...",
+                            ImageUrl = "/assets/products1.jpg",
                             Name = "Opex AI",
                             Price = 0m,
-                            Slug = "opexai"
+                            Slug = ""
                         },
                         new
                         {
                             Id = 2,
-                            Description = "Digitize your invoicing process with legally compliant e-Invoicing integrated with your system.",
-                            ImageUrl = "/images/products/einvoice.jpg",
+                            Description = "Digitize your invoicing...",
+                            ImageUrl = "/assets/products2.jpg",
                             Name = "Opex eInvoice",
                             Price = 0m,
-                            Slug = "opexeinvoice"
+                            Slug = ""
                         },
                         new
                         {
                             Id = 3,
-                            Description = "Simplify digital stamping with seamless e-Meterai issuance, legally valid and efficient.",
-                            ImageUrl = "/images/products/emeterai.jpg",
+                            Description = "Simplify digital stamping...",
+                            ImageUrl = "/assets/products3.jpg",
                             Name = "Opex eMeterai",
                             Price = 0m,
-                            Slug = "opexemeterai"
+                            Slug = ""
                         });
                 });
 

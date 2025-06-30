@@ -16,10 +16,34 @@ namespace OpexShowcase.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Product>().HasData(
-                new Product { Id = 1, Name = "Opex AI", Description = "Unlock AI-powered...", ImageUrl = "/assets/products1.jpg", Price = 0 },
-                new Product { Id = 2, Name = "Opex eInvoice", Description = "Digitize your invoicing...", ImageUrl = "/assets/products2.jpg", Price = 0 },
-                new Product { Id = 3, Name = "Opex eMeterai", Description = "Simplify digital stamping...", ImageUrl = "/assets/products3.jpg", Price = 0 }
-            );
+            new Product
+            {
+                Id = 1,
+                Name = "Opex AI",
+                Slug = "opexai",
+                Description = "Unlock AI-powered efficiency by connecting your ERP and enterprise systems seamlessly.",
+                ImageUrl = "/images/products/opexai.jpg",
+                Price = 0
+            },
+            new Product
+            {
+                Id = 2,
+                Name = "Opex eInvoice",
+                Slug = "opexeinvoice",
+                Description = "Digitize your invoicing process with legally compliant e-Invoicing integrated with your system.",
+                ImageUrl = "/images/products/einvoice.jpg",
+                Price = 0
+            },
+            new Product
+            {
+                Id = 3,
+                Name = "Opex eMeterai",
+                Slug = "opexemeterai",
+                Description = "Simplify digital stamping with seamless e-Meterai issuance, legally valid and efficient.",
+                ImageUrl = "/images/products/emeterai.jpg",
+                Price = 0
+            }
+        );
 
             modelBuilder.Entity<ProductTag>().HasData(
                 new ProductTag { Id = 1, ProductId = 1, Tag = "Scalable Cloud Infrastructure" },

@@ -39,20 +39,16 @@ public class ProductsController : ControllerBase
         return Ok(result);
     }
 
-    // ✅ POST: /api/products/{id}/try
     [Authorize]
     [HttpPost("{id}/try")]
     public async Task<IActionResult> TryProduct(int id)
     {
         var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        if (userIdString == null)
-            return Unauthorized("User ID not found in token");
-
         if (!int.TryParse(userIdString, out var userId))
             return Unauthorized("Invalid user ID");
 
-        var productExists = await _context.Products.AnyAsync(p => p.Id == id);
-        if (!productExists)
+        var product = await _context.Products.FindAsync(id);
+        if (product == null)
             return NotFound("Product not found");
 
         var alreadyTried = await _context.UserProducts
@@ -60,15 +56,25 @@ public class ProductsController : ControllerBase
         if (alreadyTried)
             return BadRequest("You already tried this product");
 
+        // 🔑 Build unique path: saas0001_opexai
+        var path = $"saas{userId:D4}_{product.Slug?.ToLower() ?? product.Name.ToLower().Replace(" ", "")}";
+
         var userProduct = new UserProduct
         {
             UserId = userId,
-            ProductId = id
+            ProductId = id,
+            AccessPath = path
         };
 
         _context.UserProducts.Add(userProduct);
         await _context.SaveChangesAsync();
 
-        return Ok("Product saved to your account");
+        // ✅ Return created path to frontend
+        return Ok(new
+        {
+            message = "Product saved to your account",
+            accessUrl = $"/{path}"
+        });
     }
+
 }
